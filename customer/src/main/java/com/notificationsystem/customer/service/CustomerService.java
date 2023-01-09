@@ -1,8 +1,8 @@
-package com.notificationsystem.service;
+package com.notificationsystem.customer.service;
 
-import com.notificationsystem.model.Customer;
-import com.notificationsystem.repository.CustomerRepository;
-import com.notificationsystem.util.CustomerRegistrationRequest;
+import com.notificationsystem.customer.util.CustomerRegistrationRequest;
+import com.notificationsystem.customer.model.Customer;
+import com.notificationsystem.customer.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
 @Service

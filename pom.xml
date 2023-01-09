@@ -8,6 +8,7 @@
   <modules>
     <module>rssreader</module>
     <module>customer</module>
+      <module>emailvalidator</module>
   </modules>
   <packaging>pom</packaging>
 

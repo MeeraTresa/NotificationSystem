@@ -1,7 +1,7 @@
-package com.notificationsystem.controller;
+package com.notificationsystem.customer.controller;
 
-import com.notificationsystem.service.CustomerService;
-import com.notificationsystem.util.CustomerRegistrationRequest;
+import com.notificationsystem.customer.service.CustomerService;
+import com.notificationsystem.customer.util.CustomerRegistrationRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

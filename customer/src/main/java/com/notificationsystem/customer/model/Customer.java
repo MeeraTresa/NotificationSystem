@@ -1,4 +1,4 @@
-package com.notificationsystem.model;
+package com.notificationsystem.customer.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
