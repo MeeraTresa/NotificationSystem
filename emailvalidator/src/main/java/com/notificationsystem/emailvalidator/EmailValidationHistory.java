@@ -23,4 +23,10 @@ public class EmailValidationHistory {
     private String email;
     private Boolean isValid;
     private LocalDateTime createdAt;
+
+    public EmailValidationHistory(String email, Boolean isValid, LocalDateTime createdAt) {
+        this.email = email;
+        this.isValid = isValid;
+        this.createdAt = createdAt;
+    }
 }

@@ -4,23 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99ef30a0-d6d2-44ff-91c4-3d573bf09701" name="Changes" comment="Setup MySQL connections using containers">
-      <change afterPath="$PROJECT_DIR$/emailvalidator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="99ef30a0-d6d2-44ff-91c4-3d573bf09701" name="Changes" comment="Refactoring packages">
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/util/CustomerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/util/EmailValidationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/util/CustomerRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/util/CustomerRegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationHistory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -58,20 +53,15 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.notificationsystem.emailvalidator" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.notificationsystem.customer.util" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.com.notificationsystem.customer.App">
-    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.notificationsystem.App" />
-      <module name="customer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.notificationsystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.notificationsystem.App" />
       <module name="rssreader" />
@@ -113,9 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.notificationsystem.customer.App" />
         <item itemvalue="Application.com.notificationsystem.emailvalidator.App" />
-        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.com.notificationsystem.customer.App" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -150,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670650125540</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring packages">
+      <created>1673290768345</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673290768345</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -171,7 +167,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added .idea folder to .gitignore" />
     <MESSAGE value="Setup MySQL connections using containers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup MySQL connections using containers" />
+    <MESSAGE value="Refactoring packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring packages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -180,6 +177,16 @@
           <url>file://$PROJECT_DIR$/rssreader/src/main/java/com/notificationsystem/service/ProducerService.java</url>
           <line>18</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationController.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
