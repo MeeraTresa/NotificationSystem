@@ -8,7 +8,8 @@
   <modules>
     <module>rssreader</module>
     <module>customer</module>
-      <module>emailvalidator</module>
+    <module>emailvalidator</module>
+    <module>eureka-server</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -19,6 +20,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.boot.maven.plugin.version>2.7.5</spring.boot.maven.plugin.version>
     <spring.boot.dependencies.version>2.7.5</spring.boot.dependencies.version>
+    <spring.cloud-version>2021.0.5</spring.cloud-version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -30,6 +32,13 @@
         <version>${spring.boot.dependencies.version}</version>
         <scope>import</scope>
         <type>pom</type>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring.cloud-version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>

@@ -20,7 +20,7 @@ public class CustomerService {
         //todo : check if email is valid
 
         EmailValidationResponse emailValidationResponse = restTemplate.getForObject(
-                "http://localhost:8082/api/v1/email-validator/{email}",
+                "http://EMAILVALIDATOR/api/v1/email-validator/{email}",
                 EmailValidationResponse.class,
                 customerRegistrationRequest.email());
         if(!emailValidationResponse.isValidEmail()){

@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99ef30a0-d6d2-44ff-91c4-3d573bf09701" name="Changes" comment="Refactoring packages">
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/util/CustomerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/util/EmailValidationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationService.java" afterDir="false" />
+    <list default="true" id="99ef30a0-d6d2-44ff-91c4-3d573bf09701" name="Changes" comment="Communication between Customer and Email Validation services using RESTTemplate">
+      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/notificationsystem/EurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/util/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/util/CustomerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailvalidator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/emailvalidator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailvalidator/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/emailvalidator/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,13 +65,42 @@
       <recent name="com.notificationsystem.customer.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.notificationsystem.customer.App">
+  <component name="RunManager" selected="Application.com.notificationsystem.emailvalidator.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.notificationsystem.App" />
       <module name="rssreader" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.notificationsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.notificationsystem.EurekaServerApplication" />
+      <module name="eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.notificationsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.notificationsystem.customer.App 2" type="Application" factoryName="Application">
+      <envs>
+        <env name="server.port" value="8085" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.notificationsystem.customer.App" />
+      <module name="customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.notificationsystem.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,10 +134,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.com.notificationsystem.customer.App 2" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.com.notificationsystem.customer.App" />
+      <item itemvalue="Application.com.notificationsystem.emailvalidator.App" />
+      <item itemvalue="Application.EurekaServerApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.com.notificationsystem.emailvalidator.App" />
         <item itemvalue="Application.com.notificationsystem.customer.App" />
+        <item itemvalue="Application.EurekaServerApplication" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -146,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673290768345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Communication between Customer and Email Validation services using RESTTemplate">
+      <created>1673295154717</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673295154717</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -168,7 +216,8 @@
     <MESSAGE value="Added .idea folder to .gitignore" />
     <MESSAGE value="Setup MySQL connections using containers" />
     <MESSAGE value="Refactoring packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring packages" />
+    <MESSAGE value="Communication between Customer and Email Validation services using RESTTemplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Communication between Customer and Email Validation services using RESTTemplate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
