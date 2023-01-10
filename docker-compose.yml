@@ -17,6 +17,12 @@ services:
         # Opens port 3306 on the container
         - '3306'
     restart: always
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      # Port used for the Zipkin UI and HTTP Api
+      - 9411:9411
 
 volumes:
   notification-system-db:

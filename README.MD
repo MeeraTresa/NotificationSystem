@@ -12,3 +12,5 @@ Technologies used:
 5. Eureka server for Service discovery and LoadBalancing
 6. OpenFeign
 7. MySQL on docker containers
+8. Spring Cloud Sleuth for Distributed Tracing
+9. Zipkin dashboards for Distributed Tracing

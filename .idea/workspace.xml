@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99ef30a0-d6d2-44ff-91c4-3d573bf09701" name="Changes" comment="Added the notification service">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+    <list default="true" id="99ef30a0-d6d2-44ff-91c4-3d573bf09701" name="Changes" comment="Adding README.MD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailvalidator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/emailvalidator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,36 +64,7 @@
       <recent name="com.notificationsystem.customer.util" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.notificationsystem.App" />
-      <module name="rssreader" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.notificationsystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.notificationsystem.customer.App 2" type="Application" factoryName="Application">
-      <envs>
-        <env name="server.port" value="8085" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="com.notificationsystem.customer.App" />
-      <module name="customer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.notificationsystem.customer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.com.notificationsystem.emailvalidator.App">
     <configuration name="com.notificationsystem.customer.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.notificationsystem.customer.App" />
       <module name="customer" />
@@ -116,8 +92,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.com.notificationsystem.customer.App 2" />
-      <item itemvalue="Application.App" />
       <item itemvalue="Application.com.notificationsystem.emailvalidator.App" />
       <item itemvalue="Application.com.notificationsystem.customer.App" />
     </list>
@@ -192,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673321008097</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding README.MD">
+      <created>1673322433003</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673322433003</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -218,7 +199,8 @@
     <MESSAGE value="Adding service discovery using Eureka Server and Load Balancing with Rest Template communication" />
     <MESSAGE value="Using OpenFeign clients to map EmailValidationResponse" />
     <MESSAGE value="Added the notification service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the notification service" />
+    <MESSAGE value="Adding README.MD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding README.MD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
