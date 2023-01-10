@@ -1,4 +1,4 @@
-package com.notificationsystem.customer.util;
+package com.notificationsystem.clients.emailvalidator;
 
 public record EmailValidationResponse(Boolean isValidEmail) {
 }
