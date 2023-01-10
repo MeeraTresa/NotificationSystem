@@ -11,6 +11,7 @@
     <module>emailvalidator</module>
     <module>eureka-server</module>
     <module>clients</module>
+    <module>notification</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -5,16 +5,19 @@ import com.notificationsystem.clients.emailvalidator.EmailValidatorClient;
 import com.notificationsystem.customer.util.CustomerRegistrationRequest;
 import com.notificationsystem.customer.model.Customer;
 import com.notificationsystem.customer.repository.CustomerRepository;
+import com.notificationsystem.clients.notification.NotificationClient;
+import com.notificationsystem.clients.notification.NotificationRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+//import org.springframework.web.client.RestTemplate;
 
 @Service
 @AllArgsConstructor
+
 public class CustomerService {
     private final CustomerRepository customerRepository;
-
     private final EmailValidatorClient emailValidatorClient;
+    private final NotificationClient notificationClient;
     public void registerCustomer(CustomerRegistrationRequest customerRegistrationRequest) {
         Customer customer = Customer.builder().firstName(customerRegistrationRequest.firstName()).
                             lastName(customerRegistrationRequest.lastName()).
@@ -34,9 +37,11 @@ public class CustomerService {
             throw new IllegalStateException("Invalid Email");
         }
         //todo : check if email is not taken
-        //todo : store customer in db
 
-        customerRepository.save(customer);
-        //todo: send notification
+        customerRepository.saveAndFlush(customer);
+        //todo : use a Message Queue to make it async
+        notificationClient.sendNotification(new NotificationRequest(customer.getId(),customer.getEmail(),
+                           String.format("Hi %s, You have successfully registered in the RSS Feed Notification System",
+                                            customer.getFirstName())));
     }
 }

@@ -4,20 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99ef30a0-d6d2-44ff-91c4-3d573bf09701" name="Changes" comment="Adding service discovery using Eureka Server and Load Balancing with Rest Template communication">
-      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/notificationsystem/clients/emailvalidator/EmailValidatorClient.java" afterDir="false" />
+    <list default="true" id="99ef30a0-d6d2-44ff-91c4-3d573bf09701" name="Changes" comment="Using OpenFeign clients to map EmailValidationResponse">
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/notificationsystem/clients/notification/NotificationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/notificationsystem/clients/notification/NotificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notificationsystem/notification/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notificationsystem/notification/NotificationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notificationsystem/notification/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notificationsystem/notification/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notificationsystem/notification/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/util/EmailValidationResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emailvalidator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/emailvalidator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/notificationsystem/clients/emailvalidator/EmailValidationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/notificationsystem/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/notificationsystem/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init/init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -46,28 +47,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Meera Tresa/OneDrive/Desktop/General/Learning/kafka/notificationsystem/notification/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.notificationsystem.notification" />
       <recent name="com.notificationsystem.emailvalidator" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Meera Tresa\OneDrive\Desktop\General\Learning\kafka\notificationsystem\notification\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.notificationsystem.clients.emailvalidator" />
       <recent name="com.notificationsystem.customer.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.notificationsystem.customer.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.notificationsystem.App" />
       <module name="rssreader" />
       <extension name="coverage">
@@ -124,14 +130,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.com.notificationsystem.customer.App 2" />
-      <item itemvalue="Application.com.notificationsystem.emailvalidator.App" />
       <item itemvalue="Application.App" />
+      <item itemvalue="Application.com.notificationsystem.emailvalidator.App" />
       <item itemvalue="Application.com.notificationsystem.customer.App" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.com.notificationsystem.customer.App" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673309154462</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Using OpenFeign clients to map EmailValidationResponse">
+      <created>1673313502986</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673313502986</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -210,7 +222,8 @@
     <MESSAGE value="Refactoring packages" />
     <MESSAGE value="Communication between Customer and Email Validation services using RESTTemplate" />
     <MESSAGE value="Adding service discovery using Eureka Server and Load Balancing with Rest Template communication" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding service discovery using Eureka Server and Load Balancing with Rest Template communication" />
+    <MESSAGE value="Using OpenFeign clients to map EmailValidationResponse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using OpenFeign clients to map EmailValidationResponse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -221,14 +234,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationController.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/emailvalidator/src/main/java/com/notificationsystem/emailvalidator/EmailValidationController.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/customer/src/main/java/com/notificationsystem/customer/service/CustomerService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
